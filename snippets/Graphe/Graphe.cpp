@@ -15,7 +15,7 @@ struct Arc
 
 struct Noeud
 {
-    vector<Arc> voisins[NB_MAX_NOEUDS];
+    vector<Arc> voisins;
 };
 
 int nbNoeuds;
