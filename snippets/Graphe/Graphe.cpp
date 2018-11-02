@@ -1,7 +1,7 @@
 #define GRAPHE_EST_ORIENTE
 #define GRAPHE_EST_PONDERE
 
-const int NB_MAX_NOEUDS = 1000*1000;
+const int NB_MAX_NOEUDS;
 
 
 struct Arc

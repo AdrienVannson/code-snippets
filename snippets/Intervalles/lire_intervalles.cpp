@@ -1,4 +1,4 @@
-const int NB_MAX_INTERVALLES = 1000*1000;
+const int NB_MAX_INTERVALLES;
 
 int nbIntervalles;
 Intervalle intervalles[NB_MAX_INTERVALLES];
