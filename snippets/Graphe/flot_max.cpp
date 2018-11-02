@@ -1,3 +1,6 @@
+const int NOEUD_SOURCE;
+const int NOEUD_PUITS;
+
 bool estVu[NB_MAX_NOEUDS];
 
 int getIArcVers (const int iNoeud, const int iVoisin)
@@ -25,7 +28,7 @@ int parcourir (const int iNoeud, const int ponderationMin)
     }
     estVu[iNoeud] = true;
 
-    if (iNoeud == nbNoeuds-1) {
+    if (iNoeud == NOEUD_PUITS) {
         return ponderationMin;
     }
 
@@ -50,9 +53,9 @@ int getFlotMax ()
     int gain;
 
     do {
-        gain = parcourir(0, +oo);
-        flotMax += gain;
         fill(estVu, estVu+nbNoeuds, false);
+        gain = parcourir(NOEUD_SOURCE, +oo);
+        flotMax += gain;
     } while (gain);
 
     return flotMax;
