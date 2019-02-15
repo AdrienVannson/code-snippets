@@ -41,6 +41,7 @@
 - Mathématiques
     - Entier sans limite de taille (avec des bitsets)
     - Fraction
+    - Factorielle
     - PGCD
     - PPCM
     - Crible d'Ératostène
