@@ -40,11 +40,14 @@
     - KMP
 - Mathématiques
     - Entier sans limite de taille (avec des bitsets)
+    - Entier avec modulo automatique
     - Fraction
-    - Factorielle
     - PGCD
     - PPCM
     - Crible d'Ératostène
+    - Factorielle
+    - Coefficient binomial
+    - Coefficient binomial avec modulo
 - Géométrie
     - Point
     - Distance
