@@ -39,7 +39,8 @@ private:
     inline void simplifier ()
     {
         if (m_den == 0) {
-            throw "Divison by zero";
+            cerr << "Error: Divison by zero" << endl;
+            exit(0);
         }
 
         const T pgcd = PGCD(m_num, m_den);
