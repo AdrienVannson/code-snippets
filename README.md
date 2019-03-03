@@ -30,6 +30,9 @@
     - Lecture
     - Position (iLigne, iColonne)
     - Convertion en graphe
+- Arbre
+    - Enracinement
+    - Tests de descendance
 - Dichotomie
 - Arbre binaire
 - Union-Find
