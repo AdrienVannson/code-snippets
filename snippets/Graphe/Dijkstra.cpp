@@ -1,11 +1,11 @@
 int dists[NB_MAX_NOEUDS];
 
-void dijkstra (const int iNoeud)
+void dijkstra (const int iNoeudDepart)
 {
     fill(dists, dists+NB_MAX_NOEUDS, +oo);
 
     priority_queue< pair<int, int> > aVoir; // {-dist, iNoeud}
-    aVoir.push( make_pair(0, iNoeud) );
+    aVoir.push( make_pair(0, iNoeudDepart) );
 
     while (aVoir.size()) {
         const int iNoeud = aVoir.top().second;
