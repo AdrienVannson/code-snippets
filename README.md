@@ -2,7 +2,6 @@
 
 - Lecture et écriture dans des fichiers
 - Intervalle
-    - Lecture
     - Union
     - Intersection
 - Tableau cumulatif
