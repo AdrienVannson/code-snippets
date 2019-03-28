@@ -56,3 +56,6 @@
     - Produit scalaire
     - Produit vectoriel
     - Enveloppe convexe
+- Chaines de caractères
+    - KMP
+    - Hashage circulaire
