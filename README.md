@@ -58,4 +58,4 @@
     - Enveloppe convexe
 - Chaines de caractères
     - KMP
-    - Hashage circulaire
+    - Hachage circulaire
