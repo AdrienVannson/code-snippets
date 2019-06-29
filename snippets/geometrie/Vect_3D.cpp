@@ -2,7 +2,7 @@ template<class T>
 class Vect
 {
 public:
-    inline Vect (const T x_=0, const T y_=0, const T z_=0) :
+    inline explicit Vect (const T x_=0, const T y_=0, const T z_=0) :
         x (x_),
         y (y_),
         z (z_)
