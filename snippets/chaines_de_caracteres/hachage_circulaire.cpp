@@ -1,9 +1,9 @@
 class Hash
 {
 public:
-    static const ll M = 1000*1000*1000 + 7;
-    static const ll R = 128;
-    static const ll INVERSE_R = 570312504;
+    static const ll M = 1000000005721ll;
+    static const ll R = 131;
+    static const ll INVERSE_R = 778625958653ll;
 
     Hash () :
         m_hash (0),
