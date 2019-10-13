@@ -40,6 +40,7 @@
 - Chaines de caractères
     - Trie
     - KMP
+    - Hachage circulaire
 - Mathématiques
     - Entier sans limite de taille (avec des bitsets)
     - Entier avec modulo automatique
@@ -56,6 +57,3 @@
     - Produit scalaire
     - Produit vectoriel
     - Enveloppe convexe
-- Chaines de caractères
-    - KMP
-    - Hachage circulaire
