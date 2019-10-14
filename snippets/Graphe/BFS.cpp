@@ -17,7 +17,7 @@ void BFS (const int iNoeud)
         }
         dists[iNoeud] = dist;
 
-        for (int voisin : noeuds[iNoeud].voisins) {
+        for (const int voisin : noeuds[iNoeud].voisins) {
             aVoir.push( make_pair(voisin, dist+1) );
         }
     }
