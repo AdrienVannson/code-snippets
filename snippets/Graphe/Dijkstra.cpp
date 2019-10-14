@@ -17,7 +17,7 @@ void dijkstra (const int iNoeudDepart)
         }
         dists[iNoeud] = dist;
 
-        for (const Arc &arc : noeuds[iNoeud].voisins) {
+        for (const Arc &arc : noeuds[iNoeud].arcs) {
             aVoir.push( make_pair(-dist-arc.ponderation, arc.cible) );
         }
     }

@@ -15,7 +15,7 @@ struct Arc
 
 struct Noeud
 {
-    vector<Arc> voisins;
+    vector<Arc> arcs;
 };
 
 int nbNoeuds;

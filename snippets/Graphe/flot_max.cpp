@@ -5,14 +5,14 @@ bool estVu[NB_MAX_NOEUDS];
 
 int getIArcVers (const int iNoeud, const int iVoisin)
 {
-    for (int iArc=0; iArc<(int)noeuds[iNoeud].voisins.size(); iArc++) {
-        if (noeuds[iNoeud].voisins[iArc].cible == iVoisin) {
+    for (int iArc=0; iArc<(int)noeuds[iNoeud].arcs.size(); iArc++) {
+        if (noeuds[iNoeud].arcs[iArc].cible == iVoisin) {
             return iArc;
         }
     }
 
-    noeuds[iNoeud].voisins.push_back(Arc{iVoisin, 0});
-    return noeuds[iNoeud].voisins.size()-1;
+    noeuds[iNoeud].arcs.push_back(Arc{iVoisin, 0});
+    return noeuds[iNoeud].arcs.size()-1;
 }
 
 int parcourir (const int iNoeud, const int ponderationMin)
@@ -32,12 +32,12 @@ int parcourir (const int iNoeud, const int ponderationMin)
         return ponderationMin;
     }
 
-    for (Arc &arc : noeud.voisins) {
+    for (Arc &arc : noeud.arcs) {
         const int res = parcourir(arc.cible, min(ponderationMin, arc.ponderation));
 
         if (res > 0) { // On a atteint l'arrivée
             arc.ponderation -= res;
-            noeuds[arc.cible].voisins[ getIArcVers(arc.cible, iNoeud) ].ponderation += res;
+            noeuds[arc.cible].arcs[ getIArcVers(arc.cible, iNoeud) ].ponderation += res;
             return res;
         }
     }

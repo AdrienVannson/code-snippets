@@ -10,17 +10,17 @@ for (int iArc=0; iArc<nbArcs; iArc++) {
     int ponderation;
     scanf("%d", &ponderation);
 
-    noeuds[source].voisins.push_back(Arc{cible, ponderation});
+    noeuds[source].arcs.push_back(Arc{cible, ponderation});
 #else
-    noeuds[source].voisins.push_back(Arc{cible});
+    noeuds[source].arcs.push_back(Arc{cible});
 #endif
 
 #ifndef GRAPHE_EST_ORIENTE
 
 #ifdef GRAPHE_EST_PONDERE
-    noeuds[cible].voisins.push_back(Arc{source, ponderation});
+    noeuds[cible].arcs.push_back(Arc{source, ponderation});
 #else
-    noeuds[cible].voisins.push_back(Arc{source});
+    noeuds[cible].arcs.push_back(Arc{source});
 #endif
 #endif
 }
