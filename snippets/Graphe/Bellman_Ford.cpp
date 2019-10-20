@@ -12,7 +12,7 @@ void bellmanFord (const int noeudDepart)
     fill(dists, dists+NB_MAX_NOEUDS, +oo);
     dists[noeudDepart] = 0;
 
-    // Calcul du plus cours chemin
+    // Calcul du plus court chemin
     for (int iIteration=0; iIteration<nbNoeuds; iIteration++) {
         for (const auto &arc : arcs) {
             dists[arc.first.second] = min(dists[arc.first.first] + arc.second,
