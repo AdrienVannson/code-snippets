@@ -21,6 +21,7 @@
         - Kruskal
     - Composantes connexes
     - Composantes fortement connexes
+    - Couplage maximal dans un graphe biparti (Hopcroft-Karp)
     - Flots
         - Flot max
         - Coupe min
