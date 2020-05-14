@@ -1,22 +1,15 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
-#include <cstdio>
-
-using namespace std;
-using ll = long long;
-
-const int oo = 1000*1000*1000;
-
+#include "algolib.hpp"
 
 int main ()
 {
+    ios_base::sync_with_stdio(false); cin.tie(NULL);
+
     int nbTests;
-    scanf("%d", &nbTests);
+    cin >> nbTests;
 
     for (int iTest=0; iTest<nbTests; iTest++) {
 
 
-        printf("Case #%d: \n", iTest+1);
+        cout << "Case #" << iTest+1 << ": " << "\n";
     }
 }
